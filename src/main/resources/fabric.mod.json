@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "worsestorage",
+  "version": "${version}",
+
+  "name": "Worse Storage",
+  "description": "My take on a worse storage mod. most storage mods throw vanilla balance and simplicity out the window - that is, i could not find a mod that does a good job of not throwing vanilla balance out the window. ",
+  "authors": [
+    "Kodiakweb"
+  ],
+  "contact": {},
+
+  "license": "LGPL-3.0",
+  "icon": "assets/worsestorage/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "net.kodiakweb.worsestorage.client.WorsestorageClient"
+    ],
+    "main": [
+      "net.kodiakweb.worsestorage.Worsestorage"
+    ]
+  },
+
+          "mixins": [
+        "worsestorage.mixins.json"
+      ],
+  "accessWidener" : "worsestorage.accesswidener",
+  "depends": {
+    "fabricloader": ">=0.14.13",
+              "fabric": "*",
+          "minecraft": "1.19.3"
+  }
+}
